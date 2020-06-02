@@ -11,11 +11,16 @@ import { CityService } from '../core/services/city.service';
 export class WeatherComponent implements OnInit {
 
   cities: Array<City>;
+  chosenCity;
 
   constructor(private cityService: CityService) { }
 
   ngOnInit(): void {
     this.cities = this.cityService.getCities();
+  }
+
+  onChooseCity(index: number): void {
+    this.chosenCity = index;
   }
 
 }
