@@ -1,17 +1,18 @@
 export interface Forecast {
+    cityId: number;
     conditions: string;
     wind: {
-        speed: number;
-        direction: string;
+      speed: number;
+      direction: string;
     };
     temperature: {
-        day: {
-            min: number;
-            max: number;
-        },
-        night: {
-            min: number;
-            max: number;
-        }
+      day: {
+        min: number;
+        max: number;
+      },
+      night: {
+        min: number;
+        max: number;
+      }
     };
-}
+   }
