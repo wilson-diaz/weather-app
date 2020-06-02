@@ -1,6 +1,15 @@
 <div class="page">
     <div class="page-header">Weather Forecast</div>
     <div class="page-body">
-      <!--Cities list will be here soon...-->
+      <div class="page-body__sidebar">
+          <ul class="cities-list">
+              <li class="cities-list__item" *ngFor="let city of cities">
+                  {{ city.name }}
+              </li>
+          </ul>
+      </div>
+      <div class="page-body__details">
+          forecast coming soon...
+      </div>
     </div>
 </div>
