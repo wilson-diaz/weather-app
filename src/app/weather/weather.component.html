@@ -11,7 +11,9 @@
           </ul>
       </div>
       <div class="page-body__details">
-          forecast coming soon...
+        <app-weather-details 
+        *ngIf="chosenCity > -1"
+        [forecast]="cities[chosenCity].forecast"></app-weather-details>
       </div>
     </div>
 </div>
